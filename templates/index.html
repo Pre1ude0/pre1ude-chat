@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Chat</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://www.nerdfonts.com/assets/css/webfont.css"
+        />
+
+        <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    </head>
+    <body>
+        <div id="chat"></div>
+        <div class="inputs">
+            <input type="text" id="message" />
+            <button id="send"><i class="nf nf-cod-send"></i></button>
+        </div>
+        <input type="text" id="username" placeholder="Username" required />
+        <script src="/static/js/chat.js"></script>
+    </body>
+</html>
