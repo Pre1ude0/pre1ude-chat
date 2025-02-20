@@ -42,7 +42,10 @@ def handle_connect():
 def handle_disconnect():
     print("Client disconnected")
 
+def application(environ, start_response):
+    return app(environ, start_response)
+
 if __name__ == '__main__':
-    socketio.run(app, port=3000, host="0.0.0.0", allow_unsafe_werkzeug=True)
+    socketio.run(app, port=3000, host="0.0.0.0")
 
 
