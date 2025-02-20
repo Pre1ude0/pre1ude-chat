@@ -4,7 +4,7 @@ from flask_socketio import SocketIO, emit
 from api import get_messages, add_message, start
 
 app = flask.Flask(__name__)
-socketio = SocketIO(app, cors_allowed_origins='*')
+socketio = SocketIO(app, cors_allowed_origins='*', async_mode='threading')
 
 start()
 
